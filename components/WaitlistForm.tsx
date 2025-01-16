@@ -31,7 +31,7 @@ export default function WaitlistForm() {
       } else {
         throw new Error('Failed to join waitlist')
       }
-    } catch (error) {
+    } catch (_) {
       toast({
         title: "Error",
         description: "There was a problem joining the waitlist. Please try again.",
